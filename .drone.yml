@@ -7,7 +7,7 @@ steps:
   image: plugins/docker
   settings:
     # registry: docker.io
-    repo: annisaseptiani1/drone-test
+    repo: annisaseptiani/drone-test
     username:
       from_secret: docker_username
     password:
