@@ -16,8 +16,6 @@ steps:
       - latest
 
 trigger:
-  branch:
-  - main
    status:
   - success
   - failure
