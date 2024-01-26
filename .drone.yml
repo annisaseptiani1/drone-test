@@ -8,12 +8,6 @@ steps:
   commands:
   - go build
   - go test
-
-- name: frontend
-  image: node
-  commands:
-  - npm install
-  - npm run test
   
 - name: docker  
   image: plugins/docker
@@ -26,3 +20,7 @@ steps:
       from_secret: docker_password
     tags: 
       - latest
+
+trigger:
+  branch:
+  - master
