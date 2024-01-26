@@ -5,10 +5,9 @@ name: hello-world
 steps:
 - name: backend
   pull: if-not-exists
-  image: golang
+  image: golang:1.13
   commands:
-  - go build
-  - go test
+  - "go build -o ./myapp"
   
 - name: docker  
   image: plugins/docker
