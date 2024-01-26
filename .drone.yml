@@ -4,6 +4,7 @@ name: hello-world
 
 steps:
 - name: backend
+  pull: if-not-exists
   image: golang
   commands:
   - go build
