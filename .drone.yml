@@ -16,6 +16,6 @@ steps:
       - latest
 
 trigger:
-   status:
+  status:
   - success
   - failure
