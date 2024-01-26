@@ -2,13 +2,7 @@ kind: pipeline
 type: docker
 name: hello-world
 
-steps:
-- name: backend
-  image: golang
-  commands:
-  - go build
-  - go test
-  
+steps:  
 - name: docker  
   image: plugins/docker
   settings:
@@ -23,4 +17,4 @@ steps:
 
 trigger:
   branch:
-  - master
+  - main
